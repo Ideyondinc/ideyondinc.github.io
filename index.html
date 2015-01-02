@@ -3,10 +3,18 @@
 <head>
   <link href="/normalize.css" rel="stylesheet">
   <style>
-    
+    .ggez{
+      height:16px;
+    }
       p{
         background: red;
+        opacity:0;
       }
+      .show-more p{
+        opacity:1;
+    }
+    .show-more .ggez{
+      height:30px;
     }
   </style>
 </head>
@@ -17,4 +25,9 @@
       <p> sdfbnsfhcewvbien;lv;pbivlk ,eurepovn;sa</p>
     </div>
 </body>
+<script>
+$('div').on('click', function() {
+  $(this).toggleClass('show-more');
+});
+</script>
 </html>
